@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href= "/styles/main.css">
+  <title>I'm Bored</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Let's find something for you to do ✌️</h1>
+
+    <form action="/" id="form" class="form" method="POST">
+      <select name="category" class="form-select">
+        <option value="" data-display="Select">JOKE CATEGORY</option>
+        <option value="Programming">Programming</option>
+        <option value="Misc">Miscallenous</option>
+        <option value="Dark">Dark</option>
+        <option value="Pun">Pun</option>
+        <option value="spooky">spooky</option>
+        <option value="christmas">christmas</option>
+        
+      </select>
+      <select name="jokes" class="form-select">
+        <option value="">Number of jokes</option>
+        <option value="1">1</option>
+        
+        
+      </select>
+      <button type="submit" class="form-submit">Go</button>
+    </form>
+    <section id="cards" class="cards">
+      
+
+        <article class="card-item">
+          <h2 class="card-activity">
+            <% if(locals.content) { %>
+                <%= content %>
+                
+
+           <% } else { %>
+
+            <h2>youfck</h2>
+          <% }%>
+            
+          </h2>
+          
+        </article>
+
+        
+
+
+          
+            <div id="tag-error" class="tag-error">
+              
+            </div>
+            
+    </section>
+  </div>
+
+</body>
+
+</html>
